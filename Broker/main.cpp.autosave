@@ -1,0 +1,18 @@
+#include "login.h"
+#include "mainwindows.h"
+
+#include <QApplication>
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    QCoreApplication::setOrganizationName("CC6521 - Modelagem de Sistemas");
+    QCoreApplication::setOrganizationDomain("");
+    QCoreApplication::setApplicationName("Broker");
+    MainWindows w;
+    Login *n = new Login();
+    n->exec();
+    w.show();
+
+    return a.exec();
+}

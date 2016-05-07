@@ -1,0 +1,15 @@
+#include "autenticate.h"
+
+Autenticate::Autenticate(QObject *parent) :
+    QObject(parent)
+{
+    settings("MySoft", "Star Runner");
+}
+
+bool Autenticate::setPassword(QByteArray pswd){
+    
+}
+
+bool Autenticate::setPassword(QString cpf){
+
+}
